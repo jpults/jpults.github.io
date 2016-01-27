@@ -1,87 +1,81 @@
-main {
-  border-style: solid;
-  margin-left: 20%;
-  margin-right: 20%;
-  
+* {
+  font-family: "Lucida Console";
 }
 
-h1 {
-  text-align: center;
-  font-family: "Seriff";
-  background-color: Purple;
-  color: Red;
-  margin-left: 30%;
-  margin-right: 30%;
+
+div {
+ display: inline;
 }
 
-h4 {
-  font-size: 20px;
+.Top {
+   background-color: #13122c;
+   color: white;
+   height: 50%;
+   
+    display: inline-block;
+    width: 100%;
+    border-style: solid;
 }
-
-#side1 {
-  display: block;
-  height: 100%;
-  width: 18%;
-  border-style: solid;
-  position: absolute;
-  
-}
-#side2 {
-    display: block;
-  height: 100%;
-  width: 18%;
-  border-style: solid;
-  position: absolute;
-  right: 0;
-
-}
-
 
 nav {
-  text-align: center;
-  font-size: 17px;
-  
-}
-
-footer {
-  border-style: solid;
+  color: white;
   text-align: center;
   font-weight: bold;
   font-size: 20px;
   padding-left: 20%;
-  paddint-right: 20%;
-  background-color: blue;
+  padding-right: 0%;
+  background-color: #13122c;
+
 }
+
+h1 {
+  
+  padding-left: 10%;
+}
+
+h2 {
+  padding-left: 20%;
+}
+
+
 
 ul {
     list-style-type: none;
     margin: 0;
+    margin-left: 40%;
     padding: 0;
     overflow: hidden;
-    background-color: blue;
+    color: white;
+  
 }
 li {
   float: left;
+  right: 0%;
+  color: white;
 }
 
 li a {
-    display: block;
-    color: orange;
+    display: inline-block;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 li a:hover {
-    background-color: orange;
+    background-color: #ff6600;
 }
 
-
-h1 {
-  text-align: center;
-  
+footer ul {
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 40%;
 }
 
-a:hover {
-  color: blue;
+footer li {
+  margin: .5%;
+}
+
+footer li a {
+  color: black;
 }
