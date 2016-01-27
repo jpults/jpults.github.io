@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html>
+<title>Blog Post Title</title>
+
+<head>
+
+</center>
+</head>
+<body>
+ 
+ <div class = "Top">
+   
+  <nav>
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Resume</a>
+        </li>
+        <li>
+           <a href="#">Projects</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+  </nav>
+  
+  <h1>
+  Jack Pults
+  </h1>
+  
+  <h2>
+  Design.           Development.             Dork.
+  </h2>
+  
+   </div>
+   
+  <div class="Blog">
+  <h1>
+  Hashes and Arrays: How do they work? 
+  </h1>
+  <p>
+  Say you want to store a group of names. You could declare a different variable for each name, ie: <br>
+  <pre><code>
+    name1 = "Jack"
+    name2 = "Jill"
+    name3 = "Sam"
+  </code>
+  </pre>
+  But this is tedious and inefficent. Instead, we can use an array to store all the names in one variable, then have an index assigned to each name. We can do this by setting the values of the names in brackets seperated by commas, like this:
+  <pre><code>
+    names = ["Jack","Jill","Sam"]
+  </code>
+  </pre>
+  The names are automatically numbered based on the order you put them in. However, you must remember that arrays always start counting at 0, so in this case, the "index" of Jack would be 0.  So how would you call this up in the code?
+  <pre><code>
+    puts names[0]
+  </code>
+  </pre>
+  Thats right, it is just the variable name followed by the index in brackets. And of course, you can use variables as the index as well.
+  <br>
+  There are a lot of useful methods built in to Ruby to help with using arrays as well. Such as the .length method, which returns the number of elements in your array.  You can find them all in the ruby documentation. If we wanted to for example, do something to each element in an array, we can use .each like so to create a loop that goes through each element.
+  <pre><code>
+   names.each |num| do
+     sum += num
+    end
+  </code>
+  </pre>
+  <br>
+  
+  What if you wanted to store a lot of info in one variable, but it consisted of different types of information? We could then use a special array called a hash. Instead of using numbers for our index, we create custom keys.  Each key must be unique and can point to any value we wish. We can declare a hash like so:
+  <pre><code>
+    my_hash = {"name" => "Jack", "address" => "Illinois" , "Age" => 24}
+  </code>
+  </pre>
+  
+  Each key can be used to call up the info connected to it, just like arrays.
+  <pre><code>
+    puts my_hash["name"]
+  </code>
+  </pre>
+  This would output "Jack" to the console. <br>
+  When using strings as keys though, it is best to instead use symbols. They are similar to strings but give extra functionality to hashes that might be useful later. 
+  <pre><code>
+   my_hash = {:name => "Jack", :address => "Illinois" , :Age => 24}
+  </code>
+  </pre>
+  So instead of using quotes we just put a colon in front of the symbol. As you can see, hashes are useful for storing blocks of related information, that can be looked up by keyword, like my personal info! Then, if we needed multiple people's info, we could make an array of hashes! But that would be a later lesson. Thanks for reading.
+  </p>
+  
+  </div>
+
+
+</body>
+</html>

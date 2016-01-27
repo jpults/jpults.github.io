@@ -1,8 +1,9 @@
-p {
-
-  margin: auto;
-  text-align: center;
+.Blog {
+  padding: 30px;
   display: block;
-  margin-left: 20%;
-  margin-right: 20%;
-  }
+  border-style: solid;
+  border-radius: 40px;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+}
