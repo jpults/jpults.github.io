@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html>
+<title>Arrays and Hashes</title>
+
+<head>
+<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+<link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</center>
+</head>
+<body>
+ 
+ <div class = "Top">
+   
+  <nav>
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Resume</a>
+        </li>
+        <li>
+           <a href="#">Projects</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+  </nav>
+  
+  <h1>
+  Jack Pults
+  </h1>
+  
+  <h2>
+  Design.           Development.             Dork.
+  </h2>
+  
+   </div>
+   
+  <div class="Blog">
+  <h1>
+  Ruby Loops vs. Javascript Loops
+  </h1>
+  <p>
+    Ah Ruby. Remember that? Nice, easy syntax. Just a start and and (end) to our loops. Well those days are over, bub. Welcome to Javascript town, where we use brackets and stuff. 
+    It's easy to get confused at what is different at first, so lets go over the main differences. <br>
+    First of all we need brackets in our javascript. These tell us when a loop begins and ends. So while in Ruby, a loop might look like. 
+    <pre>
+      While x < 5 do 
+        puts "Ruby is easy"
+        x += 1
+      end
+    </pre>
+    The same loop in ole' JS would look like:
+    <pre>
+      while (x < 5) {
+        console.log("Javascript is harder");
+        x += 1;
+     
+      }
+    </pre>
+    
+    As you can see, the brackets take the place of the do and end markers.  Did you see the other difference? We also need parenthesis around our condition.
+    <br>
+    Lets look at the common for loop now:
+    <pre>
+      for i in 1..5
+        puts "Ruby is Easy"
+        puts i
+      end
+    </pre>
+    They are a bit more complicated in JS.
+    <pre>
+      for (var i = 1; i <= 5; i++) {
+        console.log("Javascript is harder");
+        console.log(i);
+      }
+    </pre>
+    So in Ruby we have to declare the variable and the range and it will assume we want to go up by one. In javascript we have to be more specific, first setting the variable and what it starts at. What condition to compare it to and keep going while its true,
+     and how much to increment i by.  It is more complicated but as a result you can do more things. For example you could go up by .5 * i or you could multiply i by a variable as in i = i * x.
+    In general it seems that stricter syntax results in greater flexibility in javascript. <br>
+    
+    Finally I want to take a look at the common .each method in ruby, and how it is replicated in Javascript.  The .each method is used to iterate over every element in an array like so: 
+    <pre>
+      array.each do |num|
+        puts num
+      
+      end
+      
+    </pre>
+    
+    Where the num represents the value of the array at the current index. In Javascript you can use a special for loop that looks like this:
+    <pre>
+      for (var i = 0 ;array[i]; i++) {
+       console.log(array[i]);
+      }
+    </pre>
+     This looks weird because we are used to seeing a conditional statement in the middle part of the for loop declaration. In this case, when we put in array[i], javascript
+      assumes that we want to go to the end of that array. We still need our starting point for i and i declared as a variable, and how much to increase i by. 
+    <br>
+    That's it for now I hope you can better remember the syntax differences between Ruby and Javascript better now. Thanks for reading.
+  </p>
+  
+  </div>
+
+
+</body>
+</html>
