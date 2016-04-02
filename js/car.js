@@ -72,7 +72,7 @@ function drawObstacles() {
     ctx.fillStyle = "#000";
     ctx.fill();
     ctx.closePath();
-    obstacles[i].y += 5;
+    obstacles[i].y += 1;
     if (obstacles[i].y > canvas.height) {
       obstacles.splice(i, 1);
     }
