@@ -107,10 +107,10 @@ function draw () {
   checkCollision();
 
   if(p1rightPressed && x < canvas.width - carRadius){
-    x += 10;
+    x += 1;
   }
   else if (p1leftPressed && x > 0 + carRadius) {
-    x -= 10
+    x -= 1;
   }
 
 
