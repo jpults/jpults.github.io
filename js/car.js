@@ -83,6 +83,9 @@ function checkCollision() {
 
   for (i=0 ; i < obstacles.length; i++) {
     var curr = obstacles[i];
+    if (x > curr.x && x < curr.x + curr.l && y > curr.y && y < curr.y - curr.h) {
+        obstacles.splice(i,1);
+    }
 
   }
 
