@@ -57,8 +57,8 @@ function sendObstacle() {
     box = {
       x: Math.floor((Math.random() * canvas.width) ),
       y: -10,
-      h: Math.floor((Math.random() * 50) + 1),
-      l: Math.floor((Math.random() * 50) + 1)
+      h: Math.floor((Math.random() * 50) + 10),
+      l: Math.floor((Math.random() * 50) + 10)
     };
     obstacles.push(box);
 }
