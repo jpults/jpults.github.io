@@ -92,7 +92,7 @@ function draw () {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   drawCar();
 
-  if (drawCounter > 250/difficulty) {
+  if (drawCounter > 150/difficulty) {
     console.log(250/difficulty);
     console.log(obstacles);
     sendObstacle();
